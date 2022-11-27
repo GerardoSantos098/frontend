@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<div>
+    <h1 class="center">Hola mundo!</h1>
+</div>
+<div class="busqueda">
+    <form class="centrar" (ngSubmit)="buscarPalabra()" [formGroup]="datosForm">
+        <div class="left">
+            <label class="label-margin" for="palabra">Ingresa una palabra</label>
+            <input type="text" class="form-control" id="palabra" required formControlName="palabra"/>
+        </div>
+        <div class="btn-consultar">
+            <button type="submit" class="blue" [disabled]="datosForm.invalid">Buscar</button>
+        </div>
+    </form>
+</div>
+<div class="resultado centrar">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/002.txt">C:/Files/Consolidados/094.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/286.txt">C:/Files/Consolidados/111.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/421.txt">C:/Files/Consolidados/171.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/500.txt">C:/Files/Consolidados/380.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/500.txt">C:/Files/Consolidados/269.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/500.txt">C:/Files/Consolidados/189.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/500.txt">C:/Files/Consolidados/325.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/500.txt">C:/Files/Consolidados/388.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/500.txt">C:/Files/Consolidados/387.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/500.txt">C:/Files/Consolidados/235.txt</a>
+        </li>
+        <li class="list-group-item">
+            <a href="C:/Files/Consolidados/500.txt">C:/Files/Consolidados/236.txt</a>
+        </li>
+      </ul>
+</div>
